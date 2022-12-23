@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>Sound Controlled Animals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body style="background-color: cyan;">
+    <center>
+        <div class="btn btn-success" id="header_div">
+            <h1>Sound Controlled Animals</h1>
+            <p id="p">Note: This app identifies animal noises; Make some to see if it works!</p>
+        </div>
+        <div id="main_div">
+            <button id="start" onclick="startClassification()" class="btn btn-info">Start</button>
+            <br>
+            <h3>I can hear - </h3>
+            <h3 id="which_animal_sound"></h3>
+            <br>
+            <h4 id="times_animal_sound"></h4>
+            <br>
+            <img src="ear.png">
+        </div>
+        <div class="copy_right_footer" id="copy_right_footer">
+            <p>by Raghav Rao</p>
+        </div>
+    </center>
+</body>
+
+</html>
